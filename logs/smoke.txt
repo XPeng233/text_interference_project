@@ -1,0 +1,22 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|##########| 398/398 [00:00<00:00, 26468.36it/s]
+[1/20] sample=5584 dev; CLIP misses=11, OCR misses=5
+[2/20] sample=4037 test; CLIP misses=22, OCR misses=10
+[3/20] sample=8744 dev; CLIP misses=34, OCR misses=15
+[4/20] sample=8536 test; CLIP misses=45, OCR misses=20
+[5/20] sample=7304 dev; CLIP misses=56, OCR misses=25
+[6/20] sample=1039 test; CLIP misses=67, OCR misses=30
+[7/20] sample=6131 dev; CLIP misses=78, OCR misses=35
+[8/20] sample=1227 test; CLIP misses=89, OCR misses=40
+[9/20] sample=5317 dev; CLIP misses=100, OCR misses=45
+[10/20] sample=3510 test; CLIP misses=111, OCR misses=50
+[11/20] sample=7331 dev; CLIP misses=122, OCR misses=55
+[12/20] sample=7673 test; CLIP misses=133, OCR misses=60
+[13/20] sample=8274 dev; CLIP misses=144, OCR misses=65
+[14/20] sample=8728 test; CLIP misses=155, OCR misses=70
+[15/20] sample=6071 dev; CLIP misses=166, OCR misses=75
+[16/20] sample=5593 test; CLIP misses=177, OCR misses=80
+[17/20] sample=3206 dev; CLIP misses=188, OCR misses=85
+[18/20] sample=9240 test; CLIP misses=199, OCR misses=90
+[19/20] sample=3181 dev; CLIP misses=210, OCR misses=95
+[20/20] sample=530 test; CLIP misses=221, OCR misses=100
+Complete. Results: C:\Users\lecoo\DeskBox\学习\视觉大模型\outputs\smoke

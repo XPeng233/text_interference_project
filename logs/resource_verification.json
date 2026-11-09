@@ -1,0 +1,9 @@
+{
+  "dataset_url": "https://cave.cs.toronto.edu/kriz/cifar-10-python.tar.gz",
+  "dataset_md5": "c58f30108f718f92721af3b95e74349a",
+  "model_id": "openai/clip-vit-base-patch32",
+  "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "device": "cpu",
+  "ocr_smoke": "cat recognized with confidence 0.9995600382486979",
+  "unit_tests": 13
+}

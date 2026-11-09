@@ -1,0 +1,18 @@
+{
+  "definition": "Originally clean-correct and wrong-overlay target hit; success means gated prediction recovers true class.",
+  "examples": {
+    "success": [
+      4037,
+      9273,
+      7863,
+      539
+    ],
+    "failure": [
+      5074,
+      9866,
+      6399,
+      7071
+    ]
+  },
+  "note": "Empty groups have no figure; no examples are fabricated."
+}

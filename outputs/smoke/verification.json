@@ -1,0 +1,158 @@
+{
+  "verified": true,
+  "development_sources": 10,
+  "test_sources": 10,
+  "prediction_rows": 500,
+  "checks": [
+    {
+      "condition": "clean",
+      "method": "original",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "clean",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "clean",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "clean",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "clean",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "correct",
+      "method": "original",
+      "n": 10,
+      "accuracy": 1.0
+    },
+    {
+      "condition": "correct",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "correct",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.9
+    },
+    {
+      "condition": "correct",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.8
+    },
+    {
+      "condition": "correct",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "wrong",
+      "method": "original",
+      "n": 10,
+      "accuracy": 0.1
+    },
+    {
+      "condition": "wrong",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "wrong",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.6
+    },
+    {
+      "condition": "wrong",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.6
+    },
+    {
+      "condition": "wrong",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "neutral",
+      "method": "original",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "neutral",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "neutral",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.8
+    },
+    {
+      "condition": "neutral",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "neutral",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7
+    },
+    {
+      "condition": "block",
+      "method": "original",
+      "n": 10,
+      "accuracy": 0.8
+    },
+    {
+      "condition": "block",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.8
+    },
+    {
+      "condition": "block",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.8
+    },
+    {
+      "condition": "block",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.8
+    },
+    {
+      "condition": "block",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7
+    }
+  ]
+}

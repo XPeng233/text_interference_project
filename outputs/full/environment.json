@@ -1,0 +1,18 @@
+{
+  "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch_threads": 4,
+  "packages": {
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "transformers": "5.22.2",
+    "Pillow": "13.0.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1",
+    "opencv-python-headless": "5.0.0.93",
+    "rapidocr_onnxruntime": "1.4.4",
+    "onnxruntime": "1.31.1"
+  }
+}

@@ -1,0 +1,706 @@
+{
+  "status": "complete",
+  "parameters": {
+    "limit": 2,
+    "full": false,
+    "output": "outputs\\smoke",
+    "data_dir": "cache\\data",
+    "cache_dir": "cache",
+    "model": "openai/clip-vit-base-patch32",
+    "device": "cpu",
+    "batch_size": 8,
+    "threads": 4,
+    "seed": 2026,
+    "font": null,
+    "bootstrap": 2000,
+    "sensitivity": false,
+    "position_sensitivity": false,
+    "no_download": false,
+    "font_resolved": "C:/Windows/Fonts/arial.ttf",
+    "conditions": [
+      "clean",
+      "correct",
+      "wrong",
+      "neutral",
+      "block"
+    ],
+    "version": "ocr-clip-v1",
+    "condition_note": "Five controlled conditions; neutral object is weakly semantic but not a CIFAR10 class name.",
+    "fixed_fusion_alpha": 0.5
+  },
+  "gate": {
+    "threshold": 0.02,
+    "alpha": 0.75,
+    "accuracy": 0.76,
+    "interventions": 23
+  },
+  "timing": {
+    "wall_seconds": 58.414646999997785,
+    "clip_load_seconds": 0.5407276000005368,
+    "clip_uncached_inference_seconds": 18.58288380000522,
+    "clip_cache_hits": 0,
+    "clip_cache_misses": 221,
+    "ocr_cache_hits": 0,
+    "ocr_cache_misses": 100,
+    "ocr_uncached_compute_seconds": 16.5104519000015,
+    "note": "Per-row OCR seconds are original cached compute duration, not current-run latency. Wall time includes setup, downloads, plots and statistics. Shared inference means method-specific end-to-end timing is not estimated."
+  },
+  "metrics": [
+    {
+      "condition": "clean",
+      "method": "original",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.0,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "clean",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.0,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "clean",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.0,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "clean",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.0,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "clean",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.0,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "correct",
+      "method": "original",
+      "n": 10,
+      "accuracy": 1.0,
+      "accuracy_ci95": [
+        1.0,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.3,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "correct",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": -0.3,
+      "paired_accuracy_delta_ci95": [
+        -0.6,
+        0.0
+      ],
+      "flip_vs_original": 0.3,
+      "flip_ci95": [
+        0.0,
+        0.6
+      ],
+      "flip_vs_clean": 0.2,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "correct",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.9,
+      "accuracy_ci95": [
+        0.7,
+        1.0
+      ],
+      "accuracy_delta_vs_original": -0.1,
+      "paired_accuracy_delta_ci95": [
+        -0.3,
+        0.0
+      ],
+      "flip_vs_original": 0.1,
+      "flip_ci95": [
+        0.0,
+        0.3
+      ],
+      "flip_vs_clean": 0.2,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "correct",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.8,
+      "accuracy_ci95": [
+        0.5,
+        1.0
+      ],
+      "accuracy_delta_vs_original": -0.2,
+      "paired_accuracy_delta_ci95": [
+        -0.5,
+        0.0
+      ],
+      "flip_vs_original": 0.2,
+      "flip_ci95": [
+        0.0,
+        0.5
+      ],
+      "flip_vs_clean": 0.1,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "correct",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": -0.3,
+      "paired_accuracy_delta_ci95": [
+        -0.6,
+        0.0
+      ],
+      "flip_vs_original": 0.3,
+      "flip_ci95": [
+        0.0,
+        0.6
+      ],
+      "flip_vs_clean": 0.2,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "wrong",
+      "method": "original",
+      "n": 10,
+      "accuracy": 0.1,
+      "accuracy_ci95": [
+        0.0,
+        0.3
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.8,
+      "targeted_clean_correct_n": 7,
+      "targeted_asr": 0.8571428571428571,
+      "targeted_asr_ci95": [
+        0.5714285714285714,
+        1.0
+      ],
+      "paired_asr_delta_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "wrong",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.6,
+      "paired_accuracy_delta_ci95": [
+        0.3,
+        0.9
+      ],
+      "flip_vs_original": 0.8,
+      "flip_ci95": [
+        0.5,
+        1.0
+      ],
+      "flip_vs_clean": 0.2,
+      "targeted_clean_correct_n": 7,
+      "targeted_asr": 0.14285714285714285,
+      "targeted_asr_ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "paired_asr_delta_ci95": [
+        -1.0,
+        -0.2857142857142857
+      ]
+    },
+    {
+      "condition": "wrong",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.6,
+      "accuracy_ci95": [
+        0.3,
+        0.9
+      ],
+      "accuracy_delta_vs_original": 0.5,
+      "paired_accuracy_delta_ci95": [
+        0.2,
+        0.8
+      ],
+      "flip_vs_original": 0.7,
+      "flip_ci95": [
+        0.4,
+        0.9
+      ],
+      "flip_vs_clean": 0.1,
+      "targeted_clean_correct_n": 7,
+      "targeted_asr": 0.14285714285714285,
+      "targeted_asr_ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "paired_asr_delta_ci95": [
+        -1.0,
+        -0.2857142857142857
+      ]
+    },
+    {
+      "condition": "wrong",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.6,
+      "accuracy_ci95": [
+        0.3,
+        0.9
+      ],
+      "accuracy_delta_vs_original": 0.5,
+      "paired_accuracy_delta_ci95": [
+        0.2,
+        0.8
+      ],
+      "flip_vs_original": 0.7,
+      "flip_ci95": [
+        0.4,
+        0.9
+      ],
+      "flip_vs_clean": 0.1,
+      "targeted_clean_correct_n": 7,
+      "targeted_asr": 0.14285714285714285,
+      "targeted_asr_ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "paired_asr_delta_ci95": [
+        -1.0,
+        -0.2857142857142857
+      ]
+    },
+    {
+      "condition": "wrong",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.6,
+      "paired_accuracy_delta_ci95": [
+        0.3,
+        0.9
+      ],
+      "flip_vs_original": 0.8,
+      "flip_ci95": [
+        0.5,
+        1.0
+      ],
+      "flip_vs_clean": 0.2,
+      "targeted_clean_correct_n": 7,
+      "targeted_asr": 0.14285714285714285,
+      "targeted_asr_ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "paired_asr_delta_ci95": [
+        -1.0,
+        -0.2857142857142857
+      ]
+    },
+    {
+      "condition": "neutral",
+      "method": "original",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.0,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "neutral",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        -0.3,
+        0.3
+      ],
+      "flip_vs_original": 0.2,
+      "flip_ci95": [
+        0.0,
+        0.5
+      ],
+      "flip_vs_clean": 0.2,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "neutral",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.8,
+      "accuracy_ci95": [
+        0.5,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.1,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.3
+      ],
+      "flip_vs_original": 0.1,
+      "flip_ci95": [
+        0.0,
+        0.3
+      ],
+      "flip_vs_clean": 0.1,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "neutral",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        -0.3,
+        0.3
+      ],
+      "flip_vs_original": 0.2,
+      "flip_ci95": [
+        0.0,
+        0.5
+      ],
+      "flip_vs_clean": 0.2,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "neutral",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        -0.3,
+        0.3
+      ],
+      "flip_vs_original": 0.2,
+      "flip_ci95": [
+        0.0,
+        0.5
+      ],
+      "flip_vs_clean": 0.2,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "block",
+      "method": "original",
+      "n": 10,
+      "accuracy": 0.8,
+      "accuracy_ci95": [
+        0.5,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.1,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "block",
+      "method": "repair",
+      "n": 10,
+      "accuracy": 0.8,
+      "accuracy_ci95": [
+        0.5,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.1,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "block",
+      "method": "fixed_fusion",
+      "n": 10,
+      "accuracy": 0.8,
+      "accuracy_ci95": [
+        0.5,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.1,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "block",
+      "method": "js_gate",
+      "n": 10,
+      "accuracy": 0.8,
+      "accuracy_ci95": [
+        0.5,
+        1.0
+      ],
+      "accuracy_delta_vs_original": 0.0,
+      "paired_accuracy_delta_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_original": 0.0,
+      "flip_ci95": [
+        0.0,
+        0.0
+      ],
+      "flip_vs_clean": 0.1,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    },
+    {
+      "condition": "block",
+      "method": "oracle",
+      "n": 10,
+      "accuracy": 0.7,
+      "accuracy_ci95": [
+        0.4,
+        1.0
+      ],
+      "accuracy_delta_vs_original": -0.1,
+      "paired_accuracy_delta_ci95": [
+        -0.3,
+        0.0
+      ],
+      "flip_vs_original": 0.1,
+      "flip_ci95": [
+        0.0,
+        0.3
+      ],
+      "flip_vs_clean": 0.2,
+      "targeted_clean_correct_n": 0,
+      "targeted_asr": null,
+      "targeted_asr_ci95": null,
+      "paired_asr_delta_ci95": null
+    }
+  ],
+  "statistical_notes": "Test only. Bootstrap resamples source images within each condition, paired across methods, percentile 95% CI; no multiplicity correction. ASR denominator is clean-original-correct sources; null for non-targeted conditions or empty denominator. Oracle uses supplied overlay rectangles and is diagnostic only."
+}

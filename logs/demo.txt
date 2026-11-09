@@ -1,0 +1,47 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|##########| 398/398 [00:00<00:00, 35286.48it/s]
+{
+  "classes": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "original": "dog",
+  "repaired": "airplane",
+  "defended": "airplane",
+  "js": 0.503900819185281,
+  "gate": {
+    "threshold": 0.01,
+    "alpha": 0.75,
+    "accuracy": 0.862,
+    "interventions": 212
+  },
+  "gate_active": true,
+  "ocr_boxes": [
+    [
+      80,
+      176,
+      144,
+      218
+    ]
+  ],
+  "probabilities": [
+    0.7490667913970283,
+    0.0008548309393232248,
+    0.019430693029414053,
+    0.0002912404629466837,
+    0.0010923407251811818,
+    0.2208312656499192,
+    0.00012383262605021432,
+    0.0029623105361542322,
+    0.004323713354390704,
+    0.001022981279592358
+  ],
+  "warning": "Closed-set CIFAR10 categories only; probabilities are not calibrated confidence."
+}

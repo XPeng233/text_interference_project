@@ -1,0 +1,28 @@
+{
+  "limit": 2,
+  "full": true,
+  "output": "outputs\\full",
+  "data_dir": "cache\\data",
+  "cache_dir": "cache",
+  "model": "openai/clip-vit-base-patch32",
+  "device": "cpu",
+  "batch_size": 8,
+  "threads": 4,
+  "seed": 2026,
+  "font": null,
+  "bootstrap": 2000,
+  "sensitivity": true,
+  "position_sensitivity": true,
+  "no_download": false,
+  "font_resolved": "C:/Windows/Fonts/arial.ttf",
+  "conditions": [
+    "clean",
+    "correct",
+    "wrong",
+    "neutral",
+    "block"
+  ],
+  "version": "ocr-clip-v1",
+  "condition_note": "Five controlled conditions; neutral object is weakly semantic but not a CIFAR10 class name.",
+  "fixed_fusion_alpha": 0.5
+}

@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "verification_schema": 2,
+  "input_sha256": {
+    "summary.json": "f73f551dec0f1ecce85165847e2ad9fbb257e1fdd5bc9248b5026b1e1034520c",
+    "samples.csv": "1316262b6980a6e3227eb27259f2df285d47a904f5a5b272694a98efb977834f",
+    "selection.json": "a4a9904d28693a4fccb4e55a81d136b2f1aada7c2580db9e33b621d90efe824b",
+    "gate_tuning.json": "75ffa2f2a8158be10736fb33c5370a82eaa61e1a6ae3139569a4aac893b2e743",
+    "parameters.json": "0e4432af5178d6903b72c63ab7ca1fc771f9d2fc18e6f3bf9a8a74a16c41bb7c"
+  },
+  "development_sources": 100,
+  "test_sources": 400,
+  "prediction_rows": 14000
+}

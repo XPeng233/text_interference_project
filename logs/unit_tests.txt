@@ -1,0 +1,33 @@
+﻿.\.venv\Scripts\python.exe : test_asr_denominator_excludes_clean_errors (test_experiment.CoreTests.test_asr_denominator
+_excludes_clean_errors) ... ok
+所在位置 行:1 字符: 129
++ ... ew($false); .\.venv\Scripts\python.exe -m unittest discover -s tests  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_asr_denomi..._errors) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_balanced_split_and_stable_smoke_membership (test_experiment.CoreTests.test_balanced_split_and_stable_smoke_members
+hip) ... ok
+test_clip_invalid_and_boundary_boxes (test_experiment.CoreTests.test_clip_invalid_and_boundary_boxes) ... ok
+test_fusion_endpoints (test_experiment.CoreTests.test_fusion_endpoints) ... ok
+test_help_no_dependencies (test_experiment.CoreTests.test_help_no_dependencies) ... ok
+test_inpaint_no_box_is_identity (test_experiment.CoreTests.test_inpaint_no_box_is_identity) ... ok
+test_js_symmetry_bounds (test_experiment.CoreTests.test_js_symmetry_bounds) ... ok
+test_overlay_reproducible_positions (test_experiment.CoreTests.test_overlay_reproducible_positions) ... ok
+test_paired_bootstrap_constant (test_experiment.CoreTests.test_paired_bootstrap_constant) ... ok
+test_softmax_stable_and_normalized (test_experiment.CoreTests.test_softmax_stable_and_normalized) ... ok
+test_tuning_rejects_test_data (test_experiment.CoreTests.test_tuning_rejects_test_data) ... ok
+test_tuning_selects_useful_repair (test_experiment.CoreTests.test_tuning_selects_useful_repair) ... ok
+test_wrong_targets_are_not_labels (test_experiment.CoreTests.test_wrong_targets_are_not_labels) ... ok
+test_false_clean_eligibility_rejected (test_verify_results.VerificationTests.test_false_clean_eligibility_rejected) ...
+ ok
+test_missing_metric_rejected (test_verify_results.VerificationTests.test_missing_metric_rejected) ... ok
+test_missing_prediction_rejected (test_verify_results.VerificationTests.test_missing_prediction_rejected) ... ok
+test_valid_smoke_and_hashes (test_verify_results.VerificationTests.test_valid_smoke_and_hashes) ... ok
+test_wrong_ci_rejected (test_verify_results.VerificationTests.test_wrong_ci_rejected) ... ok
+test_wrong_split_rejected (test_verify_results.VerificationTests.test_wrong_split_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.312s
+
+OK

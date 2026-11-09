@@ -1,0 +1,16 @@
+# Local environments and model/data downloads
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+cache/huggingface/
+cache/data/
+cache/clip/
+# Keep cache/ocr images: required by recorded experimental examples
+*.zip
+*.partial
+.DS_Store
+Thumbs.db
